@@ -4,10 +4,15 @@ import InfoUsuario from "./componentes/infoUsuario";
 import "./styles.css";
 
 export default function App() {
-  const titulo = "Título do vídeo";
-
+  
   function reproduzVideo() {
     alert("O vídeo está sendo reproduzido");
+  }
+
+  const meusVideos = {
+    nome: "Vídeo do Túlio",
+    imagem: "https://picsum.photos/400/400?a=1"
+
   }
   return ( //todas as fuções e variáveis tem que vir em acima do return. 
     <div>      
@@ -28,15 +33,16 @@ export default function App() {
               <li className="botoes-meunu-vertical">Histórico</li>
             </ul>
             </nav>
-            <section className="painel-de-videos">
-            <CardVideo/>
-            <CardVideo/>
-            <CardVideo/>
-            <CardVideo/>
-            <CardVideo/>
-            <CardVideo/>
-            <CardVideo/>
-            <CardVideo/>            
+            <section className="painel-de-videos"> 
+            <CardVideo meusVideos = {meusVideos}/> 
+            <CardVideo meusVideos = {meusVideos}/>
+            <CardVideo meusVideos = {meusVideos}/>
+            <CardVideo meusVideos = {meusVideos}/>
+            <CardVideo meusVideos = {meusVideos}/>
+            <CardVideo meusVideos = {meusVideos}/>
+            <CardVideo meusVideos = {meusVideos}/>
+            <CardVideo meusVideos = {meusVideos}/>
+                        
             </section>
             
         
